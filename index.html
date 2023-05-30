@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel in Canada</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/canada.jpg" alt="fixed-image" />
+    <header>
+      <section class="logo">
+        <img src="./images/icon.svg" alt="logo" />
+        <h1>2022 Travel in Toronto</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> Travel In Canada</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book"></i> Reservation</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i> Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter">
+          <h3>
+            It will be a wonderful trip in Canada for<br />relaxing your body
+            and mind.
+          </h3>
+        </div>
+      </section>
+      
+      <section class="info-circles">
+        <h3>Theme of Visiting</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/sunAndBeach.jpg" alt="Sun and Beach" />
+            <p>Sun and Beach In Summer</p>
+          </div>
+          <div class="circle">
+            <img src="./images/camping.jpg" alt="Camping" />
+            <p>Camping in Canada</p>
+          </div>
+          <div class="circle">
+            <img src="./images/carnival.jpg" alt="Carnival" />
+            <p>Play Around In Carnival</p>
+          </div>
+          <div class="circle">
+            <img src="./images/performance.jpg" alt="Performance" />
+            <p>Enjoy The Performance</p>
+          </div>
+        </div>
+      </section>
+      <section class="empty-container">
+        <h3>Plan The Trip For Canada Right Now!</h3>
+      </section>
+      <section class="google-map">
+        <h3>The Location of Canada</h3>
+        <p>
+          Canada is a country located in North America, stretching from the
+          Atlantic Ocean in the east to the Pacific Ocean in the west. It is the
+          second largest country in the world by land area, after Russia, and
+          shares land borders with the United States to the south and northwest
+          (Alaska). Canada is known for its diverse geography, which includes
+          vast forests, prairies, mountains, and Arctic tundra. The country is
+          divided into ten provinces and three territories, each with their own
+          distinct landscapes and cultures. The capital city of Canada is
+          Ottawa, located in the southeastern province of Ontario.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17661996.98419743!2d-112.7397407262712!3d57.290703055962325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2z5Yqg5ou_5aSn!5e0!3m2!1szh-TW!2sca!4v1677101822165!5m2!1szh-TW!2sca"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <section class="logo">
+        <img src="./images/icon.svg" alt="logo" />
+        <h3>2022 Travel in Toronto</h3>
+      </section>
+      <section class="link">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage == 'url("./images/toronto1.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("./images/toronto2.jpg")';
+        } else if (
+          topBackground.style.backgroundImage == 'url("./images/toronto2.jpg")'
+        ) {
+          topBackground.style.backgroundImage = 'url("./images/toronto3.jpg")';
+        } else {
+          topBackground.style.backgroundImage = 'url("./images/toronto1.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
